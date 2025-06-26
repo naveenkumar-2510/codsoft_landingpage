@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">NAVEEN SHOP</div>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#product">Product</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button id="modeToggle">Dark Mode</button></li>
+                </ul>
+                <div class="hamburger" id="hamburger">&#9776;</div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Introducing the Future of Shopping</h1>
+            <p>Experience seamless shopping with our latest collection</p>
+            <a href="#product" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Why Shop With Us?</h2>
+            <div class="feature-boxes">
+                <div class="box">
+                    <h3>Fast Delivery</h3>
+                    <p>We ensure quick and safe delivery to your doorstep.</p>
+                </div>
+                <div class="box">
+                    <h3>Best Quality</h3>
+                    <p>Only premium and verified products for you.</p>
+                </div>
+                <div class="box">
+                    <h3>24/7 Support</h3>
+                    <p>Our support team is always available for you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="product" id="product">
+        <div class="container">
+            <h2>Featured Product</h2>
+            <div class="product-box">
+                <img src="headphone.jpg" alt="Product Image">
+                <div class="product-info">
+                    <h3>Smart Wireless Headphones</h3>
+                    <p>Enjoy superior sound quality and seamless connectivity with our top-rated headphones.</p>
+                    <p class="price">$199 <span>$249</span></p>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: support@Naveenshop.com</p>
+            <p>Phone: +1 123-456-7890</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Naveenshop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Dark Mode Toggle
+        const modeToggle = document.getElementById('modeToggle');
+        modeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+
+        // Hamburger Menu
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+
+</body>
+
+</html>
